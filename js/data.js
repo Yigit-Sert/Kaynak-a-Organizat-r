@@ -1,0 +1,760 @@
+export const isnadData = [
+  {
+    "title": "1. Genel İlkeler",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/1-genel-ilkeler/"
+  },
+  {
+    "title": "2. Kitap",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/2-kitap/",
+    "children": [
+      {
+        "title": "2.1. Kitap-Yazarsız ve Anonim",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/2-kitap/2-1-kitap-yazarsiz-ve-anonim/",
+        "details": {
+          "Örnek": "<em>İş Kanunları ve İlgili Mevzuatı</em>. 2 Cilt. Ankara: Adalet Yayınevi, 2. Basım, 2014.<p></p>\n<p><em>Resāʾilü İḫvāni’ṣ-Ṣafā ve ḫullāni’l-vefāʾ</em>. nşr. Butrus el-Bustânî. 4 Cilt. Beyrut: y.y., 1376-1377/1957.</p>",
+          "Kaynakçada": "<em>Kitap Adı</em>. ed. Editör/Neşreden, çev. Çeviren. x Cilt. Basım Yeri: Yayıncı, x. Basım, Basım Yılı."
+        }
+      },
+      {
+        "title": "2.2. Kitap-Tek Yazarlı",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/2-kitap/2-2-kitap-tek-yazarli/",
+        "details": {
+          "Örnek": "İnan, Afet. <em>Piri Reis’in Hayatı ve Eserleri</em>. Ankara: Türk Tarih Kurumu, 2. Basım, 2018.<p></p>\n<p>Sezgin, Fuat. <em>Geschichte des arabischen Schrifttums</em>. 17 Cilt. Leiden: Brill, 1967-2015.</p>",
+          "Kaynakçada": "Yazar Soyadı, Adı. <em>Kitap Adı</em>. x Cilt. Basım Yeri: Yayıncı, x. Basım, Basım Yılı."
+        }
+      },
+      {
+        "title": "2.3. Kitap-İki Yazarlı",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/2-kitap/2-3-kitap-iki-yazarli/",
+        "details": {
+          "Örnek": "Barkan, Ömer Lütfi – Ayverdi, Ekrem Hakkı. <em>İstanbul Vakıfları Tahrir Defteri 953 Tarihli</em>. İstanbul: İstanbul Fetih Cemiyeti, 2. Basım, 1973.<p></p>\n<p>İnan, Arı – Parmaksızoğlu, İsmet. <em>Düşünceleriyle Atatürk</em>. Ankara: Türk Tarih Kurumu Yayınları, 2018.</p>",
+          "Kaynakçada": "Yazar Soyadı, Adı – Yazar Soyadı, Adı. <em>Kitap Adı</em>. x Cilt. Basım Yeri: Yayıncı, x. Basım, Basım Yılı."
+        }
+      },
+      {
+        "title": "2.4. Kitap-Çok Yazarlı",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/2-kitap/2-4-kitap-cok-yazarli/",
+        "details": {
+          "Örnek": "Eisen, Mitchell L. vd. <em>Memory and Suggestibility in the Forensic Interview</em>. Mahwah, NJ: L. Erlbaum Associates, 2002.<p></p>\n<p>Topaloğlu, Bekir vd. <em>İslam’da İnanç Esasları.</em> İstanbul: MÜ İlâhiyat Fakültesi Vakfı Yayınları, 1998.</p>",
+          "Kaynakçada": "İlk Yazar Soyadı, Adı vd. <em>Kitap Adı</em>. x Cilt. Basım Yeri: Yayıncı, x. Basım, Basım Yılı."
+        }
+      },
+      {
+        "title": "2.5. Kitap-Editörlü",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/2-kitap/2-5-kitap-editorlu/",
+        "details": {
+          "Örnek": "Faroqhi, Suraiya (ed.). <em>Türkiye Tarihi 1603-1839</em>. çev. Fethi Aytuna. 3 Cilt. İstanbul: Kitap Yayınevi, 2. Basım, 2011.<p></p>\n<p>Furat, Ahmet Hamdi vd. (ed.). <em>Sahn-ı Semân’dan Dârülfünûn’a Osmanlı’da İlim ve Fikir Dünyası (Âlimler, Müesseseler ve Fikrî Eserler)-XVIII. Yüzyıl</em>. 2 Cilt. İstanbul: Zeytinburnu Belediyesi Kültür Yayınları, 2018.</p>\n<p>Kaynar, Mete Kaan (ed.). <em>Türkiye’nin 1950’li Yılları</em>. İstanbul: İletişim Yayınları, 2015.</p>",
+          "Kaynakçada": "Editör Soyadı, Adı (ed.)<em>. Kitap Adı</em>. x Cilt. Şehir: Yayıncı, x. Basım, Yayın Tarihi."
+        }
+      },
+      {
+        "title": "2.6. Kitap-Elektronik",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/2-kitap/2-6-kitap-elektronik/",
+        "details": {
+          "Örnek": "Şahin, Derya. <em>Amisos Mozaiği</em>. PDF: Kültür ve Turizm Bakanlığı Yayınları, 2004. <a href=\"http://www.kulturvarliklari.gov.tr/Eklenti/38967,amisos-mozaigi.pdf\">http://www.kulturvarliklari.gov.tr/Eklenti/38967,amisos-mozaigi.pdf</a><p></p>\n<p>Şenler, Şule Yüksel. <em>Huzur Sokağı</em>. Epub: Timaş Yayınları, 2016.</p>",
+          "Kaynakçada": "Yazar Soyadı, Adı. <em>Kitap Adı</em>. Yayın Formatı: Yayıncı, x. Basım, Yayın Tarihi. Erişim Adresi"
+        }
+      },
+      {
+        "title": "2.7. Kitap-Çeviri",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/2-kitap/2-7-kitap-ceviri/",
+        "details": {
+          "Örnek": "Dvornik, Francis. <em>Konsiller Tarihi İznik’ten II. Vatikan’a</em>. çev. Mehmet Aydın. Ankara: Türk Tarih Kurumu Yayınları, 1990.<p></p>\n<p>Mahmud, Abdülhalim. <em>Muhâsibî Hayatı Eserleri Fikirleri</em>. çev. M. Beşir Eryarsoy. İstanbul: İnsan Yayınları, 2005.</p>",
+          "Kaynakçada": "Yazar Soyadı, Adı. <em>Kitap Adı</em>. çev. Çeviren Adı Soyadı. x Cilt. Basım Yeri: Yayıncı, x. Basım, Basım Yılı."
+        }
+      },
+      {
+        "title": "2.8. Kitap-Neşir",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/2-kitap/2-8-kitap-nesir/",
+        "details": {
+          "Örnek": "Taşköprizâde Ahmed Efendi. <em>Miftâḥu’s-saʿâde ve miṣbâḥu’s-siyâde fî mevżûʿâti’l-ʿulûm</em>. nşr. Abdülvehhâb Ebü’n-Nûr – Kâmil Kâmil Bekrî. 3 Cilt. Kahire: Dâru’l-Kütübi’l-Hadîse, 3. Basım, 1968.<p></p>\n<p>Teftâzânî, Sa‘deddîn. <em>Şerḥu’l-ʿAḳāʾidi’n-Nesefiyye</em>. nşr. Ahmed Hicâzî es-Sekkā. Kahire: Mektebetü’l-Külliyyâti’l-Ezheriyye, 1408/1988.</p>",
+          "Kaynakçada": "Yazar Soyadı, Adı. <em>Kitap Adı</em>. nşr. Neşredenin Adı Soyadı. x Cilt. Basım Yeri: Yayıncı, x. Basım, Basım Yılı Hicrî/Milâdî."
+        }
+      },
+      {
+        "title": "2.9. Kitap-Tahkik/Edisyon Kritik",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/2-kitap/2-9-kitap-tahkik-edisyon-kritik/",
+        "details": {
+          "Örnek": "Saffâr, Ebû İshâk İbrâhim ez-Zâhid. <em>Telḫîṣü’l-edille li-ḳavâʿidi’t-tevḥîd</em>. thk. Angelika Brodersen. 2 Cilt. Beyrut: el-Ma‘hedü’l-Almânî li’l-Ebhâsi’l-Şarkiyye, 1432/2011.",
+          "Kaynakçada": "Yazar Soyadı, Adı. <em>Kitap Adı</em>. thk. Muhakkikin Adı Soyadı. Basım Yeri: Yayıncı, x. Basım, Basım Yılı Hicrî/Milâdî."
+        }
+      },
+      {
+        "title": "2.10. Kitap-Sadeleştirilen",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/2-kitap/2-10-kitap-sadelestirilen/",
+        "details": {
+          "Örnek": "Ahmed Cevdet Paşa. <em>Sadeleştirilmiş Mecelle.</em> sad. İbrahim Ural – Salih Özcan. İstanbul: Fey Vakfı, 1995.",
+          "Kaynakçada": "Yazar Soyadı, Adı. <em>Kitap Adı</em>. sad. Sadeleştirenin Adı Soyadı. Basım Yeri: Yayıncı, x. Basım, Basım Yılı Hicrî/Milâdî."
+        }
+      }
+    ]
+  },
+  {
+    "title": "3. Kitap Bölümü",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/3-kitap-bolumu/",
+    "children": [
+      {
+        "title": "3.1. Kitap Bölümü-Editörlü Eserde",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/3-kitap-bolumu/3-1-kitap-bolumu-editorlu-eserde/",
+        "details": {
+          "Örnek": "Kelly, John D. “Seeing Red: Mao Fetishism, Pax Americana and the Moral Economy of War”. <em>Anthropology and Global Counterinsurgency</em>. ed. John D. Kelly vd. 67-83. Chicago: University of Chicago Press, 2010.<p></p>\n<p>Rudolph, Ulrich. “Mâtürîdîliğin Ortaya Çıkışı”. çev. Ali Dere. <em>İmam Mâturîdî ve Mâturidilik</em>. haz. Sönmez Kutlu. 295-304. Ankara: Kitâbiyât Yayınları, 2003.</p>",
+          "Kaynakçada": "Bölüm Yazarının Soyadı, Adı. “Bölüm Adı”. çev. Çevirenin Adı Soyadı. <em>Kitap Adı.</em> ed. Editör Adı Soyadı. Cilt/Sayfa Aralığı. Basım Yeri: Yayıncı, x. Basım, Basım Yılı."
+        }
+      },
+      {
+        "title": "3.2. Kitap Bölümü-Neşredilen Eserde",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/3-kitap-bolumu/3-2-kitap-bolumu-nesredilen-eserde/",
+        "details": {
+          "Örnek": "Mahmud, Hişam İbrahim. “Mukaddime”. <em>Telḫîṣü’l-edille li-ḳavâʿidi’t-tevḥîd</em>. mlf. Ebû İshâk İbrâhim ez-Zâhid es-Saffâr. 5-44. Kahire: Dâru’s-Selâm, 1431/2010.",
+          "Kaynakçada": "Bölüm Yazarının Soyadı, Adı. “Bölüm Adı”. <em>Kitap Adı.</em> mlf. Müellifin Adı Soyadı. Cilt/Sayfa Aralığı. Basım Yeri: Yayıncı, x. Basım, Basım Yılı."
+        }
+      }
+    ]
+  },
+  {
+    "title": "4. Kur’ân-ı Kerîm",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/4-kuran-i-kerim/",
+    "children": [
+      {
+        "title": "4.1. Meâl-Basılı",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/4-kuran-i-kerim/4-1-meal-basili/",
+        "details": {
+          "Örnek": "<em>Kur’ân-ı Kerîm Meâli.</em> çev. Halil Altuntaş – Muzaffer Şahin. Ankara: Diyanet İşleri Başkanlığı Yayınları, 3. Basım, 2009.<p></p>\n<p><em>Kur’an Mesajı: Meal-Tefsir. </em>çev. Muhammed Esed, Türkçeye çev. Cahit Koytak – Ahmet Ertürk. Ankara: İşaret Yayınları, 2002.</p>",
+          "Kaynakçada": "<em>Meâl Adı</em>. çev. Çeviren Adı Soyadı. Basım Yeri: Yayıncı, x. Basım, Basım Yılı."
+        }
+      },
+      {
+        "title": "4.2. Meâl-Web",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/4-kuran-i-kerim/4-2-meal-web/",
+        "details": {
+          "Örnek": "<em>Kur’ân Yolu</em>. Erişim 16 Nisan 2018. <a href=\"https://kuran.diyanet.gov.tr\">https://kuran.diyanet.gov.tr</a>",
+          "Kaynakçada": "<em>Meâl Adı</em>. Erişim Gün Ay Yıl. Web Sitesi Ana Sayfa Adresi"
+        }
+      }
+    ]
+  },
+  {
+    "title": "5. Kitâb-ı Mukaddes",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/5-kitab-i-mukaddes/",
+    "children": [
+      {
+        "title": "5.1. Kitâb-ı Mukaddes-Basılı",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/5-kitab-i-mukaddes/5-1-kitab-i-mukaddes-basili/",
+        "details": {
+          "Örnek": "<em>Kitabı Mukaddes. </em>İstanbul: Kitabı Mukaddes Şirketi, 2. Basım, 2003.<p></p>\n<p><em>Kutsal Kitap: Tevrat, Zebur İncil.</em> İstanbul: Kitabı Mukaddes Şirketi – Yeni Yaşam Yayınları, 2009.</p>",
+          "Kaynakçada": "<em>Kaynak Adı. </em>Basım Yeri: Yayıncı, x. Basım, Basım Yılı."
+        }
+      },
+      {
+        "title": "5.2. Kitâb-ı Mukaddes-Web",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/5-kitab-i-mukaddes/5-2-kitab-i-mukaddes-web/",
+        "details": {
+          "Örnek": "<em>Kitab-ı Mukaddes</em>. Erişim 12 Temmuz 2019. <a href=\"https://www.kitabimukaddes.com\">https://www.kitabimukaddes.com</a><p></p>\n<p><em>The Holy Bible</em>. Erişim 10 Nisan 2020. <a href=\"https://www.biblegateway.com\">https://www.biblegateway.com</a></p>",
+          "Kaynakçada": "<em>Kaynak Adı</em>. Erişim Gün Ay Yıl. Web Sitesi Ana Sayfa Adresi"
+        }
+      }
+    ]
+  },
+  {
+    "title": "6. Hadis Kaynakları",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/6-hadis-kaynaklari/",
+    "children": [
+      {
+        "title": "6.1. Hadis (“Kitâb Adı”, Bâb No. Sistemi)",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/6-hadis-kaynaklari/6-1-hadis-kitab-adi-bab-no-sistemi/",
+        "details": {
+          "Örnek": "Buhârî, Ebû Abdillâh Muhammed b. İsmail. <em>el-Câmiʿu’ṣ-ṣaḥîḥ.</em> nşr. Muhammed Züheyr b. Nasr. 8 Cilt. b.y.: Dâru Tavki’n-Necât, 2. Basım, 1422/2001.",
+          "Kaynakçada": "Yazar Soyadı, Yazar Adı.<em> Hadis Kitabının Adı.</em> nşr. Neşredenin Adı Soyadı. x Cilt. Basım Yeri: Yayıncı, x. Basım, Basım Yılı."
+        }
+      },
+      {
+        "title": "6.2. Hadis (“Kitâb Adı”, Hadis No. Sistemi)",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/6-hadis-kaynaklari/6-2-hadis-kitab-adi-hadis-no-sistemi/",
+        "details": {
+          "Örnek": "Müslim, Ebü’l-Hüseyn Müslim b. el-Haccâc. <em>el-Câmiʿu’ṣ-ṣaḥîḥ</em>. nşr. Muhammed Fuâd Abdülbâkī. Kahire: y.y., 1374-75/1955-56.<p></p>\n<p>İmam Mâlik, Ebû Abdillâh Mâlik b. Enes el-Asbahî. <em>el-Muvaṭṭaʾ</em>. nşr. Abdüvehhâb Abdüllatîf. Kahire: y.y., 1382/1962.</p>",
+          "Kaynakçada": "Yazar Soyadı, Yazar Adı.<em> Hadis Kitabının Adı.</em> nşr. Neşredenin Adı Soyadı. x Cilt. Basım Yeri: Yayıncı, x. Basım, Basım Yılı."
+        }
+      },
+      {
+        "title": "6.3. Hadis (Cilt/Sayfa No. Sistemi)",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/6-hadis-kaynaklari/6-3-hadis-cilt-sayfa-no-sistemi/",
+        "details": {
+          "Örnek": "Ahmed b. Hanbel, Ebû Abdillâh Ahmed b. Muhammed b. Hanbel eş-Şeybânî. <em>el-Müsned.</em> nşr. Ebû Hâcir Muhammed Saîd Besyûnî. Beyrut: y.y., 1405/1985.",
+          "Kaynakçada": "Yazar Soyadı, Yazar Adı.<em> Hadis Kitabının Adı.</em> nşr. Neşredenin Adı Soyadı. x Cilt. Basım Yeri: Yayıncı, x. Basım, Basım Yılı."
+        }
+      }
+    ]
+  },
+  {
+    "title": "7. Yazma Eser",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/7-yazma-eser/",
+    "children": [
+      {
+        "title": "7.1. Yazma Eser-Müellifi Bilinmeyen",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/7-yazma-eser/7-1-yazma-eser-muellifi-bilinmeyen/",
+        "details": {
+          "Örnek": "<em>Tefsîru suveri’l-Kur’ân</em>. Ankara: Milli Kütüphane, Yazmalar, 363/2, 48a-72b. <a href=\"http://yazmalar.gov.tr/eser/tefs%C3%AEru-suveril-kuran/4084\">http://yazmalar.gov.tr /eser/tefs%C3%AEru-suveril-kuran/4084</a><br>\n<em>Kitâbu’z-zekât ve’l-buyûʿ mine’l-fıkh</em>. Bursa: Bursa İnebey Yazma Eser Kütüphanesi, Orhan Camii, 473, 1a-272a.",
+          "Kaynakçada": "<em>Yazma Eser Adı</em>. Kütüphanenin Bulunduğu Şehir: Kütüphane Adı, Koleksiyon Adı, Kayıt Numarası, Varak Aralığı. Erişim Adresi"
+        }
+      },
+      {
+        "title": "7.2. Yazma Eser-Müellifi Bilinen",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/7-yazma-eser/7-2-yazma-eser-muellifi-bilinen/",
+        "details": {
+          "Örnek": "Birgiwī, Meḥmed ibn Pīr ʿAlī. <em>Kitāb al-Ṭarīgah al-Muḥammadīyah</em>. Copenhagen: The Royal Library, Danish Collection, Cod. Arab. A.C. 5, 1a-227b.<br>\nKeşşî, Ebû Şekûr Muhammed b. Abdüsseyyid es-Sâlimî. <em>et-Temhîd fî beyâni’t-tevḥîd</em>. İstanbul: Süleymaniye Kütüphanesi, Şehit Ali Paşa, 1153, 1a-217b.<br>\nSiğnâkī, Hüsâmeddin Hüseyin b. Ali. <em>et-Tesdîd fî şerḥi’t-Temhîd li-ḳavâʿidi’t-tevḥîd</em>. İstanbul: Süleymaniye Kütüphanesi, Esad Efendi, 3893, 1a-215a.",
+          "Kaynakçada": "Yazar Soyadı, Adı. <em>Yazma Eser Adı</em>. Kütüphanenin Bulunduğu Şehir: Kütüphane Adı, Koleksiyon Adı, Kayıt Numarası, Varak Aralığı. Erişim Adresi"
+        }
+      }
+    ]
+  },
+  {
+    "title": "8. Yunan ve Roma Klasikleri",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/8-yunan-ve-roma-klasikleri/",
+    "details": {
+      "Örnek": "Aristoteles. <em>Metafizik</em>. çev. Ahmet Arslan. İstanbul: Sosyal Yayınlar, Kasım 1996.<p></p>\n<p>Aristoteles. <em>Metaphysics</em>. çev. Richard Hope. USA: The University of Michigan Press: Ann Arbor Paperbacks, 1960.</p>\n<p>Thomas Aquinas. <em>Commentary on the Metaphysics of Aristotle</em>. çev. John P. Roman. 2 Cilt. Chicago: Henry Regnery Company, 1961.</p>",
+      "Kaynakçada": "Yazar Adı. <em>Kitap Adı</em>. ed. Editör, çev. Çeviren. Basım Yeri: Yayıncı, Basım Sayısı, Basım Yılı."
+    }
+  },
+  {
+    "title": "9. Arşiv Belgesi",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/9-arsiv-belgesi/",
+    "details": {
+      "Örnek": "BOA, Osmanlı Arşivi. <em>Mühimme-i Asâkir Defterleri [A.DVNS.ASK.MHM.d]</em>. No. 989, Gömlek No. 7. <a href=\"https://katalog.devletarsivleri.gov.tr\">https://katalog.devletarsivleri.gov.tr</a><p></p>\n<p>BOA, Osmanlı Arşivi. <em>Bâb-ı Âsafî- Âmedî Kalemi [A.(AMD)]</em>. No. 16, Gömlek No. 72. <a href=\"https://katalog.devletarsivleri.gov.tr\">https://katalog.devletarsivleri.gov.tr</a></p>\n<p>BOA, Osmanlı Arşivi. <em>Düvel-i Ecnebiye Belgeleri [A.DVN.DVE]</em>. No. 976. <a href=\"https://katalog.devletarsivleri.gov.tr\">https://katalog.devletarsivleri.gov.tr</a></p>",
+      "Kaynakçada": "Arşiv Adı Kısaltması, Arşiv Adı. <em>Defter Adı [Defter Kodu]</em>. No. Numarası, (varsa) Gömlek No. Numarası. (varsa) Erişim Adresi"
+    }
+  },
+  {
+    "title": "10. Kadı Sicilleri",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/10-kadi-sicilleri/",
+    "children": [
+      {
+        "title": "10.1. Kadı Sicili-Matbu",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/10-kadi-sicilleri/10-1-kadi-sicili-matbu/",
+        "details": {
+          "Örnek": "<em>Galata Mahkemesi 90 Numaralı Sicil (1073-1074/1663).</em> haz. Fuat Recep – Salih Kahriman. İstanbul: İSAM Yayınları, 2012. <a href=\"http://www.kadisicilleri.org/index.php\">http://www.kadisicilleri.org/index.php</a><p></p>\n<p><em>İstanbul Kadı Sicilleri Eyüb (Havâss-ı Refîa) Mahkemesi 49 Numaralı Sicil (1054/1644).</em> haz. Ayşe Seyyide Adıgüzel – Zeynep Trabzonlu. İstanbul: İSAM Yayınları, 2011. <a href=\"http://www.kadisicilleri.org/index.php\">http://www.kadisicilleri.org/index.php</a></p>",
+          "Kaynakçada": "<em>Sicil Adı (Yılı). h</em>az. Adı Soyadı. Basım Yeri: Yayıncı, x. Basım, Basım Yılı. Erişim Adresi"
+        }
+      },
+      {
+        "title": "10.2. Kadı Sicili-Arşivde",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/10-kadi-sicilleri/10-2-kadi-sicili-arsivde/",
+        "details": {
+          "Örnek": "<em>Kayseri Sancağı Şer’îye Sicil Defteri (1334-1336)</em>. Milli Kütüphane, No. 06 Mil Yz C 39/3, 68-90. <a href=\"https://kasif.mkutup.gov.tr/SonucDetay.aspx?MakId=857602\">https://kasif.mkutup.gov.tr/SonucDetay.aspx?MakId=857602</a>",
+          "Kaynakçada": "<em>Sicil Adı (Yılı).</em> Kütüphane/Arşiv Adı, Koleksiyon Adı, No. Numarası. Erişim Adresi"
+        }
+      }
+    ]
+  },
+  {
+    "title": "11. Ansiklopedi",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/11-ansiklopedi/",
+    "children": [
+      {
+        "title": "11.1. Ansiklopedi-Matbu",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/11-ansiklopedi/11-1-ansiklopedi-matbu/",
+        "details": {
+          "Örnek": "Akün, Ömer Faruk. “Âlî Mustafa Efendi”. <em>Türkiye Diyanet Vakfı İslâm Ansiklopedisi.</em> 2/416-417. Ankara: TDV Yayınları, 1989.<p></p>\n<p>İnalcık, Halil. “Selīm I”. <em>The Encyclopaedia of Islam</em> (New Edition). ed. C. E. Bosworth vd. 9/127-131. Leiden: Brill, 1997.</p>\n<p>Yavuz, Yusuf Şevki. “İstidlâl (Kelâm)”. <em>Türkiye Diyanet Vakfı İslâm Ansiklopedisi</em>. 23/325-328. İstanbul: TDV Yayınları, 2001.</p>",
+          "Kaynakçada": "Yazar Soyadı, Adı. “Madde Adı”. <em>Ansiklopedi Adı</em> (Edisyon). Ed. Editör Adı Soyadı. Cilt/Sayfa Aralığı. Basım Yeri: Yayıncı, x. Basım, Yıl."
+        }
+      },
+      {
+        "title": "11.2. Ansiklopedi-Yazarsız",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/11-ansiklopedi/11-2-ansiklopedi-yazarsiz/",
+        "details": {
+          "Örnek": "“Felsefe”. <em>Temel İslam Ansiklopedisi</em>. ed. Tuncay Başoğlu. 3/31-36. Ankara: Türkiye Diyanet Vakfı Yayınları – İSAM Yayınları, 2019.",
+          "Kaynakçada": "“Madde Adı”. <em>Ansiklopedi Adı</em> (Edisyon). Ed. Editör Adı Soyadı. Cilt/Sayfa Aralığı. Basım Yeri: Yayıncı, x. Basım, Yıl."
+        }
+      },
+      {
+        "title": "11.3. Ansiklopedi-Web",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/11-ansiklopedi/11-3-ansiklopedi-web/",
+        "details": {
+          "Örnek": "Çağrıcı, Mustafa. “İhsan”. <em>Türkiye Diyanet Vakfı İslâm Ansiklopedisi</em>. Erişim 12 Temmuz 2019. <a href=\"https://islamansiklopedisi.org.tr/ihsan--iyilik\">https://islamansiklopedisi.org.tr/ihsan–iyilik</a><p></p>\n<p>Küçük, Raşit. “İsnad”. <em>Türkiye Diyanet Vakfı İslâm Ansiklopedisi</em>. Erişim 16 Nisan 2019. <a href=\"https://islamansiklopedisi.org.tr/isnad--hadis%20\">https://islamansiklopedisi.org.tr/isnad–hadis</a></p>\n<p>Lowin, Shari L. “Isrāʾīliyyāt”. <em>Encyclopaedia of Islam</em> (3. Edisyon). ed. Kate Fleet vd. Erişim 13 Temmuz 2019. <a href=\"http://ekaynaklar.mkutup.gov.tr:2097/10.1163/1573-3912_ei3_COM_32621\">http://ekaynaklar.mkutup.gov.tr:2097/10.1163/1573-3912_ei3_COM_32621</a></p>",
+          "Kaynakçada": "Yazar Soyadı, Adı. “Madde Adı”. <em>Ansiklopedi Adı</em> (Edisyon). Ed. Editör Adı Soyadı. Erişim Gün Ay Yıl. Erişim Adresi"
+        }
+      }
+    ]
+  },
+  {
+    "title": "12. Sözlük",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/12-sozluk/",
+    "children": [
+      {
+        "title": "12.1. Sözlük-Arap Harfli",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/12-sozluk/12-1-sozluk-arap-harfli/",
+        "details": {
+          "Örnek": "Abdülbâkī, Muhammed Fuâd. <em>el-Muʿcemü’l-müfehres li-elfâẓi’l-Ḳurʾâni’l-Kerîm.</em> Kahire – Beyrut: y.y., 1364/1945.<p></p>\n<p>İbn Manzûr, Muhammed b. Mükerrem. <em>Lisânü’l-ʿArab</em>. nşr. Abdullah Ali el-Kebîr. 6 Cilt. Kahire: Dârü’l-Maârif, ts.</p>\n<p>Tehânevî, Muhammed Ali b. Ali. <em>Keşşâfü ıṣṭılâḥâti’l-fünûn ve’l-‘ulûm.</em> nşr. Ali Dahrûc – Abdullah Hâlidî. 2 Cilt. Beyrut: Mektebetü Lübnan, 1996.</p>\n<p>Ziriklî, Hayreddin.<em> el-Aʿlâm: Ḳāmûsü terâcim.</em> nşr. Züheyr Fethullah. 8 Cilt. Beyrut: Dârü’l-İlm li’l-Melâyin, 2002.</p>",
+          "Kaynakçada": "Yazar Soyadı, Adı. <em>Sözlük Adı</em>. nşr. Neşredenin Adı Soyadı. x Cilt. Basım Yeri: Yayıncı, x. Basım, Basım Yılı."
+        }
+      },
+      {
+        "title": "12.2. Sözlük-Latin Harfli",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/12-sozluk/12-2-sozluk-latin-harfli/",
+        "details": {
+          "Örnek": "Akalın, Şükrü Halûk vd. <em>Türkçe Sözlük</em>. Ankara: Türk Dil Kurumu, 11. Basım, 2011.<p></p>\n<p>Cevizci, Ahmet. <em>Felsefe Sözlüğü</em>. İstanbul: Paradigma Yayınları, 3. Basım, 1999.</p>\n<p>Devellioğlu, Ferit. <em>Osmanlıca-Türkçe Ansiklopedik Lûgat</em>. Ankara: Aydın Kitabevi, 33. Basım, 2017.</p>\n<p>Lane, Edward William. <em>An Arabic-English Lexicon.</em> 8 Cilt. Beirut: Librairie du Liban, 1968.</p>\n<p>Topaloğlu, Bekir – Çelebi, İlyas. <em>Kelâm Terimleri Sözlüğü</em>. İstanbul: İSAM Yayınları, 4. Basım, 2015.</p>",
+          "Kaynakçada": "Yazar Soyadı, Adı. <em>Sözlük Adı</em>. ed. Editörün Adı Soyadı. X Cilt. Basım Yeri: Yayıncı, x. Basım, Basım Yılı."
+        }
+      },
+      {
+        "title": "12.3. Sözlük-Web",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/12-sozluk/12-3-sozluk-web/",
+        "details": {
+          "Örnek": "<em>Arabic Ontology</em>. Erişim 31 Ağustos 2019. <a href=\"https://ontology.birzeit.edu/\">https://ontology.birzeit.edu</a><p></p>\n<p><em>Güncel Türkçe Sözlük</em>. Erişim 8 Temmuz 2019. <a href=\"http://sozluk.gov.tr/\">http://sozluk.gov.tr</a></p>\n<p><em>Kubbealtı Lugati</em>. Erişim 11 Temmuz 2019. <a href=\"http://lugatim.com\">http://lugatim.com</a></p>",
+          "Kaynakçada": "<em>Sözlük Adı</em>. Erişim Gün Ay Yıl. Erişim Adresi"
+        }
+      }
+    ]
+  },
+  {
+    "title": "13. Tez",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/13-tez/",
+    "children": [
+      {
+        "title": "13.1. Tez-Lisans",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/13-tez/13-1-tez-lisans/",
+        "details": {
+          "Örnek": "Demir, Abdullah. <em>Mâtürîdî Kelâm Ekolünde Nesefîler ve Ebû Hafs Ömer en-Nesefî’nin İtikâdî Görüşleri</em>. Bursa: Uludağ Üniversitesi, İlahiyat Fakültesi, Lisans Tezi, 2002. <a href=\"https://doi.org/10.5281/zenodo.3359800\">https://doi.org/10.5281/zenodo.3359800</a>",
+          "Kaynakçada": "Yazar Soyadı, Adı. <em>Tez Adı</em>. Şehir: Üniversite Adı, Fakülte Adı, Lisans Tezi, Yılı. (varsa) Erişim Adresi"
+        }
+      },
+      {
+        "title": "13.2. Tez-Yüksek Lisans",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/13-tez/13-2-tez-yuksek-lisans/",
+        "details": {
+          "Örnek": "Eren, Recep. <em>Mâtürîdî’nin Müteşâbih Âyetlere Yaklaşımı</em>. Sivas: Cumhuriyet Üniversitesi, Sosyal Bilimler Enstitüsü, Yüksek Lisans Tezi, 2017.<p></p>\n<p>Eskildsen, Stephen Edward. <em>The Beliefs and Practices of Early Ch‘üan-Chen Taoism</em>. Canada: The University of British Columbia, The Faculty of Graduate Studies, Yüksek Lisans Tezi, 1989. <a href=\"https://open.library.ubc.ca/cIRcle/collections/ubctheses/831/items/1.0097774\">https://open.library.ubc.ca/ cIRcle/collections/ubctheses/831/items/1.0097774</a></p>",
+          "Kaynakçada": "Yazar Soyadı, Adı. <em>Tez Adı</em>. Şehir: Üniversite Adı, Enstitü Adı, Yüksek Lisans Tezi, Yıl. Varsa Erişim Adresi"
+        }
+      },
+      {
+        "title": "13.3. Tez-Doktora",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/13-tez/13-3-tez-doktora/",
+        "details": {
+          "Örnek": "Ceric, Mustafa. <em>A Study of the Theology of Abu Mansur al-Maturidi</em>. Chicago: The University of Chicago, Near Eastern Languages and Civilizations, Doktora Tezi, 1987.<p></p>\n<p>Demir, Abdullah. <em>Ebû İshâk Zâhid es-Saffâr’ın Kelâm Yöntemi.</em> Sivas: Cumhuriyet Üniversitesi, Sosyal Bilimler Enstitüsü, Doktora Tezi, 2014. <a href=\"https://doi.org/10.5281/zenodo.3359806\">https://doi.org/10.5281/zenodo.3359806</a></p>\n<p>Dorroll, Philip Christopher. <em>Modern by Tradition: Abū Mansūr al-Māturīdī and the New Turkish Theology</em>. Georgia: Emory University, Doktora Tezi, 2013.</p>",
+          "Kaynakçada": "Yazar Soyadı, Adı. <em>Tez Adı</em>. Şehir: Üniversite Adı, Enstitü Adı, Doktora Tezi, Yıl. (varsa) Erişim Adresi"
+        }
+      },
+      {
+        "title": "13.4. Tez-Tıpta Uzmanlık",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/13-tez/13-4-tez-tipta-uzmanlik/",
+        "details": {
+          "Örnek": "Uyar, Enes. <em>Sağlıklı Bireylerde Oruç Tutmanın Göz Üzerine Olan Etkilerinin Değerlendirilmesi</em>. Bolu: Abant İzzet Baysal Üniversitesi, Tıp Fakültesi, Tıpta Uzmanlık Tezi, 2017.",
+          "Kaynakçada": "Yazar Soyadı, Adı. <em>Tez Adı</em>. Şehir: Üniversite Adı, Fakülte Adı, Tıpta Uzmanlık Tezi, Yılı. (varsa) Erişim Adresi"
+        }
+      },
+      {
+        "title": "13.5. Tez-Sanatta Yeterlik",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/13-tez/13-5-tez-sanatta-yeterlik/",
+        "details": {
+          "Örnek": "Baydemir, Esen. <em>Berlin İslam Sanatları Müzesi’nde Bulunan Türk Halıları</em>. İstanbul: Mimar Sinan Güzel Sanatlar Üniversitesi, Güzel Sanatlar Enstitüsü, Sanatta Yeterlik Tezi, 2018. <a href=\"https://tez.yok.gov.tr/UlusalTezMerkezi\">https://tez.yok.gov.tr/UlusalTezMerkezi</a>",
+          "Kaynakçada": "Yazar Soyadı, Adı. <em>Tez Adı</em>. Şehir: Üniversite Adı, Enstitü Adı, Sanatta Yeterlik Tezi, Yılı. (varsa) Erişim Adresi"
+        }
+      },
+      {
+        "title": "13.6. Tez-Diş Hekimliği Uzmanlık",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/13-tez/13-6-tez-dis-hekimligi-uzmanlik/",
+        "details": {
+          "Örnek": "Tekin, Elif. <em>Sivas İlinde Yaşayan 7-14 Yaş Aralığındaki Çocuklarda Dental Erozyon Prevalansının ve Etiyolojik Faktörlerin Belirlenmesi</em>. Sivas: Sivas Cumhuriyet Üniversitesi, Diş Hekimliği Fakültesi, Diş Hekimliği Uzmanlık Tezi, 2019. <a href=\"https://tez.yok.gov.tr/UlusalTezMerkezi\">https://tez.yok.gov.tr/UlusalTezMerkezi</a>",
+          "Kaynakçada": "Yazar Soyadı, Adı. <em>Tez Adı</em>. Şehir: Üniversite Adı, Fakülte Adı, Diş Hekimliği Uzmanlık Tezi, Yılı. (varsa) Erişim Adresi"
+        }
+      },
+      {
+        "title": "13.7. Tez-Tıpta Yan Dal Uzmanlık",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/13-tez/13-7-tez-tipta-yan-dal-uzmanlik/",
+        "details": {
+          "Örnek": "Bal, Ayşe Zeynep. <em>Kronik Böbrek Yetmezliği Hastalarında Vasküler Kalsifikasyon ve Belirteçlerinin İlişkisi ve Bu İlişkiye Etki Eden Faktörler</em>. Ankara: Başkent Üniversitesi, Tıp Fakültesi, Tıpta Yan Dal Uzmanlık Tezi, 2014.",
+          "Kaynakçada": "Yazar Soyadı, Adı. <em>Tez Adı</em>. Şehir: Üniversite Adı, Fakülte Adı, Tıpta Yan Dal Uzmanlık Tezi, Yılı. (varsa) Erişim Adresi"
+        }
+      },
+      {
+        "title": "13.8. Tez-Doçentlik",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/13-tez/13-8-tez-docentlik/",
+        "details": {
+          "Örnek": "Soysal, Özer. <em>Cumhuriyet Öncesi Dönem Türk Kütüphaneciliği</em>. Ankara: Ankara Üniversitesi, Dil&nbsp;ve&nbsp;Tarih-Coğrafya Fakültesi, Doçentlik Tezi, 1973.",
+          "Kaynakçada": "Yazar Soyadı, Adı. <em>Tez Adı</em>. Şehir: Üniversite Adı, Fakülte Adı, Lisans Tezi, Yılı. (varsa) Erişim Adresi"
+        }
+      }
+    ]
+  },
+  {
+    "title": "14. Makale",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/14-makale/",
+    "children": [
+      {
+        "title": "14.1. Makale-Araştırma (Tek Yazarlı-Çok Yazarlı)",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/14-makale/14-1-makale-arastirma-tek-yazarli-cok-yazarli/",
+        "details": {
+          "Örnek": "Ayten, Ali vd. “Dini Başa Çıkma, Şükür ve Hayat Memnuniyeti İlişkisi: Hastalar, Hasta Yakınları ve Hastane Çalışanları Üzerine Bir Araştırma”. <em>Dinbilimleri Akademik Araştırma Dergisi</em> 12/2 (2012), 45-79.<p></p>\n<p>Çiftci, Adem. “İslam Ceza Hukukunda Suça Teşebbüsten Vazgeçme”. <em>Cumhuriyet İlahiyat Dergisi</em> 19/1 (Haziran 2015), 23-46. <a href=\"https://doi.org/10.18505/cuifd.48242\">https://doi.org/10.18505/cuifd.48242</a></p>\n<p>Kalaycı, Mehmet – Eren, Muhammet Emin. “Reflection of Qāḍīzādelīs-Khalwatīs Tension on the Islamic Heresiography: Muṣṭafá Ibn Ibrāhīm and is Alphabetical Classifıcation of Sects”. <em>Ilahiyat Studies</em> 9/2 (2018), 249-290. <a href=\"https://doi.org/10.12730/13091719.2018.92.182\">https://doi.org/10.12730/13091719.2018.92.182</a></p>\n<p>Türcan, Galip. “Kelâm’ın Meşrûiyeti Sorunu: Ehl-i Sünnet Kelâmı ve Olgusal Gerçeklik Arasındaki İlişki”. <em>Marife</em> 5/3 (2005), 175-193. <a href=\"https://doi.org/10.5281/zenodo.3343671\">https://doi.org/10.5281/zenodo.3343671</a></p>",
+          "Kaynakçada": "Yazar Soyadı, Adı. “Makale Adı”. <em>Dergi Adı</em> Cilt Numarası/Sayı Numarası (Yayın Ayı Yılı), Sayfa Aralığı. https://doi.org/XXXXXXXXXX"
+        }
+      },
+      {
+        "title": "14.2. Makale-Çeviri",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/14-makale/14-2-makale-ceviri/",
+        "details": {
+          "Örnek": "Ess, Josef van. “Mu‘tezile: İslâm’ın Akılcı Yorumu-1”. çev. Veysel Kasar. <em>Harran Üniversitesi İlahiyat Fakültesi Dergisi</em> 13/20 (2008), 291-299.<p></p>\n<p>Hoover, Jon. “İslâmî Monoteizm ve Teslîs”. çev. Zeynep Yücedoğru. <em>Oksident</em> 1/1 (2019), 117-143. <a href=\"https://doi.org/10.5281/zenodo.3360748\">https://doi.org/10.5281/zenodo.3360748</a></p>",
+          "Kaynakçada": "Yazar Soyadı, Adı. “Makale Adı”. çev. Çevirenin Adı Soyadı<em>. Dergi Adı</em> Cilt Numarası/Sayı Numarası (Yayın Ayı Yılı), Sayfa Aralığı. https://doi.org/XXXXXXXXXX"
+        }
+      },
+      {
+        "title": "14.3. Makale-Tahkik/Neşir",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/14-makale/14-3-makale-tahkik-nesir/",
+        "details": {
+          "Örnek": "Halebî, İbrahim. <em>Risâle fi hakkı ebeveyi’r-Resûl</em>. nşr. Kadir Gömbeyaz. “Ebeveyn-i Resûl Meselesine Özgün Yaklaşımlar: İbrahim el-Halebî’ye (ö. 956/1549) Nispet Edilen Bir Risalenin Neşri ve Analizi”. <em>Bilimname</em> 38 (2019), 57-81. <a href=\"https://doi.org/10.28949/bilimname.592278\">https://doi.org/10.28949/bilimname.592278</a><br>\nŞuhâvî, Bedreddin. <em>et-Tırâzu’l-müzheb</em>. “Bedreddin eş-Şuhâvî’nin et-Tırâzu’l-müzheb Adlı Eserinin Tahkik ve Tercümesi”. thk. Osman Bayder. <em>Tahkik İslami İlimler Araştırma ve Neşir Dergisi</em> 2/1 (Haziran 2019), 211-257. <a href=\"https://doi.org/10.5281/zenodo.3475103\">https://doi.org/10.5281/zenodo.3475103</a>",
+          "Kaynakçada": "Yazar Soyadı, Adı. <em>Neşredilen Eser Adı</em>. “Makale Adı”. nşr./thk. Makale Yazarı Adı Soyadı<em>. Dergi Adı</em> Cilt Numarası/Sayı Numarası (Yayın Ayı Yılı), Sayfa Aralığı. https://doi.org/XXXXXXXXXX"
+        }
+      },
+      {
+        "title": "14.4. Makale-Popüler",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/14-makale/14-4-makale-populer/",
+        "details": {
+          "Örnek": "Arslan, Mustafa. “Sanal Dünya ve Değişen Toplumsal/Bireysel İlişkiler”. <em>Diyanet Aylık Dergi</em> 315 (Mart 2017), 12-30. <a href=\"http://www.diyanetdergi.com/gundem/item/674-sanal-dunya-ve-degisen-toplumsal-bireysel-iliskiler\">http://www.diyanetdergi.com/gundem/item/674-sanal-dunya-ve-degisen-toplumsal-bireysel-iliskiler</a>",
+          "Kaynakçada": "Yazar Soyadı, Adı. “Makale Adı”. <em>Süreli Yayın Adı</em> Cilt Numarası/Sayı Numarası (Yayın Ayı Yılı), Sayfa Aralığı. Erişim Adresi"
+        }
+      },
+      {
+        "title": "14.5. Makale-İnternette",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/14-makale/14-5-makale-internette/",
+        "details": {
+          "Örnek": "Karcher, Sebastian – Zumstein, Philipp. “Citation Styles: History, Practice, and Future”. <em>Authorea</em>. Erişim 18 Eylül 2019. <a href=\"https://www.authorea.com/users/102264/articles/124920-citation-styles-history-practice-and-future\">https://www.authorea.com/users/102264/ articles/124920-citation-styles-history-practice-and-future</a>",
+          "Kaynakçada": "Yazar Soyadı, Adı. “Makale Adı”. <em>Site Adı</em>. Erişim Gün Ay Yıl. Erişim Adresi"
+        }
+      }
+    ]
+  },
+  {
+    "title": "15. Bildiri/Tebliğ",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/15-bildiri-teblig/",
+    "details": {
+      "Örnek": "Demir, Abdullah. “Farklı Ebû Hanîfe Tasavvurları: Fakih ve Mütekellim Hanefîler Örneği”. <em>IV. Uluslararası Şeyh Şa’ban-ı Velî Sempozyumu</em>. ed. Cengiz Çuhadar vd. 1/643-658. Kastamonu: Kastamonu Üniversitesi Yayınları, 2017.<p></p>\n<p>Uyanık, Osman. “Yusuf Has Hacib’in Gök Bilimine Katkıları”. <em>Uluslararası Ahmet Yesevi’den Günümüze İnsanlığa Yön Veren Türk Büyükleri Sempozyumu Bildirileri.</em> ed. İrfan Ünver Nasrattınoğlu. 5-43. Ankara: Türk Kültürü Araştırmaları Kurumu, 2009.</p>",
+      "Kaynakçada": "Yazar Soyadı, Adı. “Bildiri Başlığı”. <em>Kitap Adı</em>. ed. Editör Adı Soyadı. Cilt/Sayfa Aralığı. Basım Yeri: Yayıncı, x. Basım, Basım Yılı."
+    }
+  },
+  {
+    "title": "16. Gazete",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/16-gazete/",
+    "children": [
+      {
+        "title": "16.1. Gazete-Köşe Yazısı",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/16-gazete/16-1-gazete-kose-yazisi/",
+        "details": {
+          "Örnek": "Bardakçı, Murat. “Restorasyon Faaliyetleri ve Şeyh Galib’in Sandukası”.<em> Habertürk</em> (20 Ağustos 2019). <a href=\"https://www.haberturk.com/yazarlar/murat-bardakci/2514553-restorasyon-faaliyetleri-ve-seyh-galibin-sandukasi\">https://www.haberturk.com/yazarlar/murat-bardakci/2514553-restorasyon-faaliyetleri-ve-seyh-galibin-sandukasi</a><p></p>\n<p>Hanioğlu, M. Şükrü. “15 Temmuz’u Farklı Kılan Nedir?”. <em>Sabah</em> (15 Temmuz 2018), 8. <a href=\"https://www.sabah.com.tr/yazarlar/hanioglu/2018/07/15/15-temmuzu-farkli-kilan-nedir\">https://www.sabah.com.tr/yazarlar/hanioglu/ 2018/07/15/15-temmuzu-farkli-kilan-nedir</a></p>",
+          "Kaynakçada": "Yazar Soyadı, Adı. “Köşe Yazısı Başlığı”. <em>Gazete Adı</em> (Yayın Günü Ayı Yılı), Sayfa Aralığı. Erişim Adresi"
+        }
+      },
+      {
+        "title": "16.2. Gazete Haberi-Yazarlı",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/16-gazete/16-2-gazete-haberi-yazarli/",
+        "details": {
+          "Örnek": "Aktaş, Alaattin. “Faizin düşmesi kimlere yarar?”. <em>Dünya</em> (10 Temmuz 2019), 6. <a href=\"https://www.dunya.com/\">https://www.dunya.com</a>",
+          "Kaynakçada": "Yazar Soyadı, Adı. “Haber Başlığı”. Gazete<em> Adı</em> (Gün Ay Yıl), Sayfa Aralığı. Erişim Adresi"
+        }
+      },
+      {
+        "title": "16.3. Gazete Haberi-Yazarsız",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/16-gazete/16-3-gazete-haberi-yazarsiz/",
+        "details": {
+          "Örnek": "<em>Milliyet</em>. “Yetki Kanunları” (17 Eylül 1971), 1. <a href=\"http://www.milliyet.com.tr\">http://www.milliyet.com.tr</a>",
+          "Kaynakçada": "<em>Gazete Adı</em>. “Haber Başlığı” (Gün Ay Yıl), Sayfa Aralığı. Erişim Adresi"
+        }
+      }
+    ]
+  },
+  {
+    "title": "17. Rapor",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/17-rapor/",
+    "children": [
+      {
+        "title": "17.1. Rapor-Yazarsız",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/17-rapor/17-1-rapor-yazarsiz/",
+        "details": {
+          "Örnek": "DİYKB, Din İşleri Yüksek Kurulu Başkanlığı. <em>Kendi Dilinden FETÖ Örgütlü Bir Din İstismarı</em>. Ankara: Diyanet İşleri Yayınları, 2017.<p></p>\n<p>MAK, Meclis Araştırması Komisyonu. <em>Başta Cinsel İstismar Olmak Üzere Çocuklara Yönelik Her Türlü İstismar Olaylarının Araştırılarak Alınması Gereken Önlemlerin Belirlenmesi Amacıyla Kurulan Meclis Araştırması Komisyonu Raporu</em>. Ankara: TBMM, 2016. <a href=\"https://www.tbmm.gov.tr/sirasayi/donem26/yil01/ss442.pdf\">https://www.tbmm.gov.tr/sirasayi/donem26/yil01/ss442.pdf</a></p>",
+          "Kaynakçada": "Kurum Adı Kısaltması, Kurum Adı<em>. Eser Adı</em>. Basım Yeri: Yayıncı, x. Basım, Basım Yılı. Erişim Adresi"
+        }
+      },
+      {
+        "title": "17.2. Rapor-Yazarlı",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/17-rapor/17-2-rapor-yazarli/",
+        "details": {
+          "Örnek": "Aydıntepe, Mustafa – Artokça, İzzettin. <em>Yemen Raporu</em>. TASAM, 2018. <a href=\"http://www.tasam.org/Files/PDF/Raporlar/yemen_raporu.pdf_b7e9f548-3946-4f3d-ac14-b8448ef6b8eb.pdf\">http://www.tasam.org/Files/PDF/Raporlar/ yemen_raporu.pdf_b7e9f548-3946-4f3d-ac14-b8448ef6b8eb.pdf</a>",
+          "Kaynakçada": "Hazırlayan Soyadı, Adı. <em>Rapor Adı</em>. Kurum Adı, Yılı. Erişim Adresi"
+        }
+      }
+    ]
+  },
+  {
+    "title": "18. Basın Bülteni",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/18-basin-bulteni/",
+    "details": {
+      "Örnek": "BDDK, Bankacılık Düzenleme ve Denetleme Kurumu. <em>Aylık Bankacılık Sektörü Verileri</em> (Haziran 2019). <a href=\"https://www.bddk.org.tr/bultenaylik\">https://www.bddk.org.tr/bultenaylik</a><p></p>\n<p>HMB, Hazine ve Maliye Bakanlığı. <em>Aylık Bütçe Bülteni</em> (Haziran 2019). <a href=\"https://ms.hmb.gov.tr/uploads/2019/07/2019-Haziran-Aylık-Bütçe-Bülteni.pdf\">https://ms.hmb.gov.tr/uploads/2019/07/2019-Haziran-Aylık-Bütçe-Bülteni.pdf</a></p>",
+      "Kaynakçada": "Kurum Adı<em> Kısaltması</em>, Kurum Adı. <em>Basın Bülteni Adı</em> (Yayın Günü Ayı Yılı). Erişim Adresi"
+    }
+  },
+  {
+    "title": "19. İstatistik",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/19-istatistik/",
+    "details": {
+      "Örnek": "TCMB, Türkiye Cumhuriyet Merkez Bankası. <em>Bankalarca Açılan Kredilere Uygulanan Ağırlıklı Ortalama Faiz Oranları</em> (16 Ağustos 2019). <a href=\"https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/Faiz+Istatistikleri/Bankalarca+Acilan+Kredi\">https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Istatistikler/Faiz+Istatistikleri/Bankalarca+Acilan+Kredi</a><p></p>\n<p>TÜİK, Türkiye İstatistik Kurumu. <em>Sanayi Üretim Endeksi</em> (Haziran 2019). <a href=\"http://www.tuik.gov.tr/PreTablo.do?alt_id=1024\">http://www.tuik.gov.tr/PreTablo.do?alt_id=1024</a></p>",
+      "Kaynakçada": "Kurum Adı Kısaltması, Kurum Adı. <em>İstatistik Adı</em> (Yayın Günü Ayı Yılı). Erişim Adresi"
+    }
+  },
+  {
+    "title": "20. Katalog",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/20-katalog/",
+    "children": [
+      {
+        "title": "20.1. Katalog-Yazarsız",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/20-katalog/20-1-katalog-yazarsiz/",
+        "details": {
+          "Örnek": "<em>el-Fihrisü’ş-şâmil li’t-türâsi’l-Arabiyyi’l-İslâmiyyi’l-mahtût: el-fıkh ve usûluhû</em>. 12 Cilt. Amman: Müessesetü Âli’l-Beyt li’l-Fikri’l-İslâmî, 1999-2014.",
+          "Kaynakçada": "<em>Kitap Adı</em>. çev. Çeviren Adı Soyadı. x Cilt. Basım Yeri: Yayıncı, x. Basım, Basım Yılı."
+        }
+      },
+      {
+        "title": "20.2. Katalog-Yazarlı",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/20-katalog/20-2-katalog-yazarli/",
+        "details": {
+          "Örnek": "Müşâr, Hanbâbâ. <em>Fihrist-i kitâbhâ-yı çâpî-i Arabî</em>. Tahran: Çâp-i Rengîn, 2. Basım, 1965.<p></p>\n<p>Zeydân, Yûsuf. <em>el-Mahtûtâtü’l-elfiyye</em>. Kahire: Dâru’l-Hilâl, 2004.</p>",
+          "Kaynakçada": "Yazar Soyadı, Adı. <em>Kitap Adı</em>. çev. Çeviren Adı Soyadı. x Cilt. Basım Yeri: Yayıncı, x. Basım, Basım Yılı."
+        }
+      },
+      {
+        "title": "20.3. Katalog-Editörlü",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/20-katalog/20-3-katalog-editorlu/",
+        "details": {
+          "Örnek": "Roper, Geoffrey (ed.). <em>World Survey of Islamic Manuscripts</em>. 4 Cilt. London: al-Furqan Islamic Heritage Foundation, 1991-1994.",
+          "Kaynakçada": "Yazar Soyadı, Adı. <em>Kitap Adı</em>. çev. Çeviren Adı Soyadı. x Cilt. Basım Yeri: Yayıncı, x. Basım, Basım Yılı."
+        }
+      },
+      {
+        "title": "20.4. Katalog-Web",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/20-katalog/20-4-katalog-web/",
+        "details": {
+          "Örnek": "TF, The Fihrist. <em>Union Catalogue of Manuscripts from the Islamicate World</em>. Erişim 13 Eylül 2019. <a href=\"https://www.fihrist.org.uk/about\">https://www.fihrist.org.uk/about</a><p></p>\n<p>TYEKB, Türkiye Yazma Eserler Kurumu Başkanlığı. <em>Yazma Eserler Portalı</em>. Erişim 12 Eylül 2019. <a href=\"http://yazmalar.gov.tr\">http://yazmalar.gov.tr</a></p>",
+          "Kaynakçada": "Kurum/Site Adı. <em>Katalog Adı</em>. Erişim Gün Ay Yıl. Katalog Erişim Adresi"
+        }
+      }
+    ]
+  },
+  {
+    "title": "21. Görüşme/Mülâkat",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/21-gorusme-mulakat/",
+    "children": [
+      {
+        "title": "21.1. Görüşme/Mülakat-Erişimi Kısıtlı",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/21-gorusme-mulakat/21-1-gorusme-mulakat-erisimi-kisitli/"
+      },
+      {
+        "title": "21.2. Görüşme/Mülakat-Webte",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/21-gorusme-mulakat/21-2-gorusme-mulakat-webte/",
+        "details": {
+          "Örnek": "İnalcık, Halil. “Fatih Sultan Mehmed” (Görüşmeci: İlber Ortaylı, Video Kaydı, Görüşme 3 Mart 1985). <a href=\"https://www.youtube.com/watch?v=8px5eBJHYNE&amp;list=PLCq4ha8CiOukJvXOx3Kp8lC9QoSqLIVjj&amp;index=4\">https://www.youtube.com/watch?v=8px5eBJHYNE&amp;list=PLCq4ha8CiOukJvXOx3Kp8lC9QoSqLIVjj&amp;index=4</a>",
+          "Kaynakçada": "Görüşme Yapılanın Soyadı, Adı. “Görüşme Başlığı” (Görüşmeci: Adı Soyadı, Kayıt Biçimi, Görüşme Gün Ay Yıl). Erişim Adresi"
+        }
+      },
+      {
+        "title": "21.3. Görüşme/Mülakat-Dergide",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/21-gorusme-mulakat/21-3-gorusme-mulakat-dergide/",
+        "details": {
+          "Örnek": "Kara, İsmail. “İmkânsıza Yönelmedikçe Mümkün Olan Ele Geçmez” (Görüşmeci: Fatma Barbarosoğlu, Görüşme Transkripsiyonu). <em>Nihayet Dergisi</em> 5 (Temmuz 2015), 34-38. <a href=\"http://www.nihayet.com/roportaj/imkansiza-yonelmedikce-mumkun-olan-ele-gecmez/\">http://www.nihayet.com/roportaj/imkansiza-yonelmedikce-mumkun-olan-ele-gecmez/</a><p></p>\n<p>Şeyh Zindânî, Abdülmecid b. Aziz. “Yemen’de Şeyh Zindânî ile Mülakat” (Görüşmeci: Mehmet Ümit, Görüşme Transkripsiyonu). <em>e-makalat</em> 6/2 (Güz 2013), 135-150.</p>",
+          "Kaynakçada": "Görüşme Yapılanın Soyadı, Adı. “Görüşme Başlığı” (Görüşmecinin Adı Soyadı, Kayıt Biçimi). <em>Dergi Adı</em> Cilt/Sayı (Yayın Tarihi), Sayfa Aralığı. Web Adresi."
+        }
+      },
+      {
+        "title": "21.4. Görüşme/Mülakat-Kitapta",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/21-gorusme-mulakat/21-4-gorusme-mulakat-kitapta/",
+        "details": {
+          "Örnek": "Barbarosoğlu, Fatma Karabıyık. “Nefs-i Emmareye Hitap Eden Herşey Reyting Rekoru Kırar” (Görüşmeci: Halime Kökçe). <em>Sözüm Söz</em>. 81-84. İstanbul: Profil Yayıncılık, 2012.<p></p>\n<p>Sinanoğlu, Oktay. “Yabancı Dille Eğitime Neden Bu Kadar Karşısınız?” (Görüşmeci: Sinan Hıncal). <em>Bir Nev-York Rüyası Bye Bye Türkçe.</em> İstanbul: Bilim – Gönül Yayınları, 54. Basım, 2011.</p>",
+          "Kaynakçada": "Görüşme Yapılanın Soyadı, Adı. “Görüşme Başlığı” (Görüşmeci: Adı Soyadı). <em>Kitap Adı.</em> ed. Editör Adı Soyadı. Cilt/Sayfa Aralığı. Basım Yeri: Yayıncı, x. Basım, Basım Yılı."
+        }
+      }
+    ]
+  },
+  {
+    "title": "22. Mevzuat",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/22-mevzuat/",
+    "children": [
+      {
+        "title": "22.1. Mevzuat-Resmî Gazete’de",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/22-mevzuat/22-1-mevzuat-resmi-gazetede/",
+        "details": {
+          "Örnek": "DY, Doçentlik Yönetmeliği. <em>Resmî Gazete</em> 30392 (15 Nisan 2018). Erişim 3 Eylül 2019. <a href=\"http://www.resmigazete.gov.tr/eskiler/2018/04/20180415-3.htm\">http://www.resmigazete.gov.tr/eskiler/2018/04/20180415-3.htm</a><p></p>\n<p>FSEK, Fikir ve Sanat Eserleri Kanunu (Kanun No. 5846). <em>Resmî Gazete</em> 7981 (13 Aralık 1951). Erişim 3 Eylül 2019. <a href=\"https://kms.kaysis.gov.tr/Home/Goster/33768?AspxAutoDetectCookieSupport=1\">https://kms.kaysis.gov.tr/Home/Goster/33768?AspxAutoDetectCookieSupport=1</a></p>\n<p>Stop extremism, Commission Decision (EU) 2017/1002 of 7 June 2017 on the proposed citizens’ initiative entitled Stop extremism. <em>Official Journal of the European Union</em> L 152/1 (15 June 2017). Erişim 3 Eylül 2019. <a href=\"https://eur-lex.europa.eu/eli/dec/2017/1002/oj\">https://eur-lex.europa.eu/eli/dec/2017/1002/oj</a></p>\n<p>YK, Yükseköğretim Kanunu (Kanun No. 2547). <em>Resmî Gazete</em> 17506 (6 Kasım 1981). Erişim 3 Eylül 2019. <a href=\"http://www.mevzuat.gov.tr/MevzuatMetin/1.5.2547.pdf\">http://www.mevzuat.gov.tr/MevzuatMetin/1.5.2547.pdf</a></p>",
+          "Kaynakçada": "Mevzuat Adı Kısaltması, Mevzuat Adı (Kanun No. Mevzuat Numarası). <em>Resmî Gazete</em> Sayı No (Yayın Tarihi). Erişim Gün Ay Yıl. Erişim Adresi"
+        }
+      },
+      {
+        "title": "22.2. Mevzuat-Diğer",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/22-mevzuat/22-2-mevzuat-diger/",
+        "details": {
+          "Örnek": "YKBAYEY, Yükseköğretim Kurulu Bilimsel Araştırma ve Yayın Etiği Yönergesi. Türkiye: Yükseköğretim Kurulu, 2016. Erişim 12 Temmuz 2019. <a href=\"https://www.yok.gov.tr/Documents/Kurumsal/mevzuat/YayınEtiğiYönergesi_140318.pdf\">https://www.yok.gov.tr/Documents/Kurumsal/mevzuat/YayınEtiğiYönergesi_140318.pdf</a><p></p>\n<p>YKEDİ, Yükseköğretim Kurumları Etik Davranış İlkeleri. Türkiye: Yükseköğretim Kurulu, 2014. Erişim 12 Temmuz 2019. <a href=\"https://www.ankara.edu.tr/wp-content/uploads/sites/6/2015/01/etik-davranış-ilkeleri.pdf\">https://www.ankara.edu.tr/wp-content/uploads/sites/6/2015/01/etik-davranış-ilkeleri.pdf</a></p>",
+          "Kaynakçada": "Mevzuat Adı Kısaltması, Mevzuat Adı. Ülke: Düzenleyici Kurum Adı, Yayın Yılı. Erişim Gün Ay Yıl. Erişim Adresi"
+        }
+      }
+    ]
+  },
+  {
+    "title": "23. Standard",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/23-standard/",
+    "details": {
+      "Örnek": "TSE, Türk Standardları Enstitüsü. <em>Helal Belgelendirmesi Yapan Kuruluşlar İçin Kılavuz</em>. Türkiye: Türk Standardları Enstitüsü, Kabul 05 Haziran 2012, TS OIC/SMIIC 2/T1.",
+      "Kaynakçada": "Kurum Adı Kısaltması, Kurum Adı<em>. Standard Adı</em>. Ülke: Kabul Eden Kurum Adı, Kabul Kabul Tarihi, Standard No."
+    }
+  },
+  {
+    "title": "24. Mahkeme Kararı",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/24-mahkeme-karari/",
+    "details": {
+      "Örnek": "AYM, Anayasa Mahkemesi. K. 2015/19953 (26 Haziran 2019). <a href=\"http://www.resmigazete.gov.tr/eskiler/2019/08/20190806-6.pdf\">http://www.resmigazete.gov.tr/eskiler/2019/08/20190806-6.pdf</a><p></p>\n<p>Yargıtay, Yargıtay 11. Hukuk Dairesi. K. 2019/1204 (22 Ağustos 2019). <a href=\"http://www.resmigazete.gov.tr/eskiler/2019/08/20190822-4.pdf\">http://www.resmigazete.gov.tr/eskiler/2019/08/ 20190822-4.pdf</a></p>",
+      "Kaynakçada": "Mahkemenin Adı Kısaltması, Mahkeme Adı. K. Karar Numarası (Karar Günü Ayı Yılı). (varsa) Erişim Adresi"
+    }
+  },
+  {
+    "title": "25. İnternet Sitesi",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/25-internet-sitesi/",
+    "details": {
+      "Örnek": "DİB, Diyanet İşleri Başkanlığı. “Din İşleri Yüksel Kurulu Başkanlığı”. Erişim 1 Mayıs 2017. <a href=\"https://kurul.diyanet.gov.tr\">https://kurul.diyanet.gov.tr</a><p></p>\n<p>İSNAD, İSNAD Atıf Sistemi. “İSNAD Nedir?”. Erişim 12 Mayıs 2018. <a href=\"http://www.isnadsistemi.org\">http://www.isnadsistemi.org</a></p>\n<p>YU, Yale University. “About Yale: Yale Facts”. Erişim 13 Mayıs 2017. <a href=\"https://www.yale.edu/about-yale/yale-facts\">https://www.yale.edu/about-yale/yale-facts</a></p>",
+      "Kaynakçada": "Kurum/Site Adı Kısaltması, Kurum/Site Adı. “Web Sayfa Başlığı”. Erişim Gün Ay Yıl. Erişim Adresi"
+    }
+  },
+  {
+    "title": "26. Veri Tabanı",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/26-veri-tabani/",
+    "details": {
+      "Örnek": "ALMANHAL, Al Manhal eLibrary. “Aranan: إسناد”. Erişim 9 Temmuz 2019. <a href=\"http://platform.almanhal.com\">http://platform.almanhal.com</a><p></p>\n<p>DAVET, Dini Araştırmalar Veri Tabanı İlahiyat Atıf Dizini. “Aranan: Oruç İbadeti”. Erişim 12 Eylül 2019. <a href=\"https://www.davet.org.tr\">https://www.davet.org.tr</a></p>\n<p>EBSCO, EBSCO Akademik Search Complete. “Aranan: Mehmet Akif Ersoy”. Erişim 19 Nisan 2019. <a href=\"http://search.ebscohost.com\">http://search.ebscohost.com</a></p>\n<p>WoS, Web of Science. “Aranan: Maturidism”. Erişim 18 Eylül 2019. <a href=\"http://apps.webofknowledge.com\">http://apps.webofknowledge.com</a></p>",
+      "Kaynakçada": "Veri Tabanı Adının Kısaltması, Veri Tabanı Adı. “Aranan: Arama Kelimesi”. Erişim Gün Ay Yıl. Erişim Adresi"
+    }
+  },
+  {
+    "title": "27. Yazılım",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/27-yazilim/",
+    "details": {
+      "Örnek": "<em>EndNote</em> X9. Yazılım. ABD: Clarivate Analytics, 2019. <a href=\"https://endnote.com\">https://endnote.com</a><p></p>\n<p><em>Islamic calendar converter</em>. Yazılım. Rolla – ABD: Muslim Student Association of UMR – Waleed A. Muhanna, 1955. <a href=\"https://www.loc.gov/item/2003556315\">https://www.loc.gov/item/2003556315</a></p>\n<p><em>Microsoft Word</em> 16.29. Yazılım. ABD: Microsoft Corporation, 2019.</p>",
+      "Kaynakçada": "<em>Yazılım Adı</em> Versiyonu. Yazılım. Oluşturulduğu Ülke: Firma Adı veya Yazılımcı Adı Soyadı, Yıl. Erişim Adresi"
+    }
+  },
+  {
+    "title": "28. Patent",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/28-patent/",
+    "details": {
+      "Örnek": "Fişek, Mehmet. <em>Chair for Performing the Rituel Prayers of Islam to People Having Physical Illnesses</em>. Patent. World Intellectual Property Organization, No. WO2014/011125, Tarih 16 Ocak 2014. <a href=\"https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2014011125&amp;tab=PCTBIBLIO&amp;_cid=P22-K0LCW3-92000-1\">https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2014011125&amp;tab=PCTBIBLIO&amp;_cid=P22-K0LCW3-92000-1</a><p></p>\n<p>Kaya, Adem. <em>Eğitim Dokümanları İçin İçerik Sınıflandırma Sistemi ve Yöntemi</em>. Patent. Türk Patent ve Marka Kurumu, No. 2019/07502, Tarih 17 Mayıs 2019. <a href=\"https://www.turkpatent.gov.tr/TURKPATENT\">https://www.turkpatent.gov.tr/TURKPATENT</a></p>",
+      "Kaynakçada": "Başvuru Sahibi Soyadı, Adı. <em>Buluş Adı</em>. Koruma Tipi. Tescil Eden Kurum, No. Yayın Numarası, Tarih Gün Ay Yıl. Erişim Adresi"
+    }
+  },
+  {
+    "title": "29. Sosyal Medya",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/29-sosyal-medya/",
+    "details": {
+      "Örnek": "Demir, Abdullah. “İSNAD yaygınlaşıyor”. <em>Facebook.</em> 12 Mart 2019, 20:30. Erişim 12 Temmuz 2019. <a href=\"https://www.facebook.com/seherberat/posts/10218523255423323\">https://www.facebook.com/seherberat/posts/10218523255423323</a><p></p>\n<p>T.C. CB, T.C. Cumhurbaşkanlığı. “2019-2020 eğitim öğretim yılında öğretmenlerimiz ve öğrencilerimiz … diliyoruz”. <em>Twitter.</em> 8 Eylül 2019, 23:32. Erişim 9 Eylül 2019. <a href=\"https://twitter.com/tcbestepe/status/1170948112367665153\">https://twitter.com/tcbestepe/status/1170948112367665153</a></p>",
+      "Kaynakçada": "Kullanıcı Soyadı, Adı. “Gönderi Adı”. <em>Sosyal Medya Adı</em>. Gönderi Günü Ayı Yılı, Saat:Dakika. Erişim Gün Ay Yıl. Erişim Adresi"
+    }
+  },
+  {
+    "title": "30. Film",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/30-film/",
+    "details": {
+      "Örnek": "Darabont, Frank. <em>The Shawshank Redemption [Esaretin Bedeli]</em> (Film, 1995). <a href=\"http://www.imdb.com/title/tt0111161\">http://www.imdb.com/title/tt0111161</a>",
+      "Kaynakçada": "Yönetmen Soyadı, Adı.<em> Film Adı [</em>varsa<em> Çeviri Adı]</em> (Film, Yapım Yılı). IMDB Adresi"
+    }
+  },
+  {
+    "title": "31. TV Yayını",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/31-tv-yayini/",
+    "details": {
+      "Örnek": "Üçer, Cenksu. “Mizan”.<em> Diyanet TV</em>. Yayın Tarihi 06 Temmuz 2019. <a href=\"https://www.diyanet.tv/mizan/video/mizan--58-bolum\">https://www.diyanet.tv/mizan/video/mizan–58-bolum</a>",
+      "Kaynakçada": "Yapımcı veya Sunucunun Soyadı, Adı. “Yayın Adı”. <em>TV Adı</em>. Yayın Tarihi Gün Ay Yıl. Erişim Adresi"
+    }
+  },
+  {
+    "title": "32. Video Kaydı",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/32-video-kaydi/",
+    "details": {
+      "Örnek": "Tarakçı, Muhammet. “İSNAD-Kitap Bölümüne Atıf”. <em>YouTube</em>. Yayın Tarihi 31 Mart 2018. <a href=\"https://www.youtube.com/watch?v=QwJe7fJfGYI\">https://youtu.be/watch?v=QwJe7fJfGYI</a>",
+      "Kaynakçada": "Yönetmen/Yükleyen Soyadı, Adı. “Kayıt Adı”. <em>Yayımlandığı Platformun Adı</em>. Yayın Tarihi Gün Ay Yıl. Erişim Adresi"
+    }
+  },
+  {
+    "title": "33. Ses Kaydı",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/33-ses-kaydi/",
+    "details": {
+      "Örnek": "Biçer, İsmail. “Bakara Sûresi”. <em>Seher Demir Özel Arşivi</em>, ts.<p></p>\n<p>Jackson, Michael. “Break of Dawn”. <em>Invincible</em>, 2001. Erişim 12 Temmuz 2018. <a href=\"https://rateyourmusic.com/release/album/michael-jackson/invincible-10\">https://rateyourmusic.com/release/album/michael-jackson/invincible-10</a></p>\n<p>Koca, Fatih. “Hak Bir Gönül Verdi Bana”. <em>Lâ Mekân</em>, 2016.</p>\n<p>Naina, Ahmed. “Sûrat Al-Fatihah”. <em>al-Mushaf al-Mujawwad</em>, 1987. Erişim 14 Temmuz 2018. <a href=\"https://en.islamway.net/collection/10935/al-mushaf-al-mujawwad\">https://en.islamway.net/collection/10935/al-mushaf-al-mujawwad</a></p>\n<p>Şener, Taner. “<em>Derman Kâr Eylemez”. Gönül Plak,</em> 1970. Erişim 18 Temmuz 2018. <a href=\"https://kasif.mkutup.gov.tr/SonucDetay.aspx?MakId=590311\">https://kasif.mkutup.gov.tr/SonucDetay.aspx?MakId=590311</a></p>",
+      "Kaynakçada": "Soyadı, Adı. “Kayıt Adı”. <em>Albüm/Yayıncı veya Arşiv Adı</em>, Yıl. Erişim Gün Ay Yıl. Erişim Adresi"
+    }
+  },
+  {
+    "title": "34. Nota Kâğıdı",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/34-nota-kagidi/",
+    "details": {
+      "Örnek": "<em>Hak’tan Doğarak Gönlüne İmân-ı Mehâbet</em> (Nota Kâğıdı, ts.). İstanbul: İSAM Kütüphanesi, Kemal Batanay Müzik Arşivi, No. KB: 1-37-130. <a href=\"http://isamveri.org\">http://isamveri.org</a>",
+      "Kaynakçada": "<em>Eserin Adı veya İlk Dizesi</em> (Nota Kâğıdı, Yılı). Kütüphanenin Bulunduğu Şehir: Kütüphane Adı, Koleksiyon Adı, No. Demirbaş Numarası. Erişim Adresi"
+    }
+  },
+  {
+    "title": "35. Sınav Kâğıdı",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/35-sinav-kagidi/",
+    "details": {
+      "Örnek": "Öğrenci 1. <em>İç Tasarıma Giriş Dersi Vize Sınavı</em> (Sınav Kâğıdı, 20 Mart 2019). Sivas Cumhuriyet Üniversitesi, Mimarlık Fakültesi, Öğretici 1.<p></p>\n<p>Öğrenci 2. <em>Uluslararası İlişkiler-I Dersi Final Sınavı</em> (Sınav Kâğıdı, 12 Nisan 2019). Selçuk Üniversitesi, İktisadi İdari Bilimler Fakültesi, Öğretici 2.</p>\n<p>Öğrenci 3. <em>Türkçe Dersi Ara Sınav</em> (Sınav Kâğıdı, 10 Ekim 2018). Ankara Üniversitesi, Eğitim Fakültesi, Öğretici 3.</p>",
+      "Kaynakçada": "Öğrenci Adı Soyadı. <em>Dersin Adı Sınavın Adı</em> (Sınav Kâğıdı, Sınav Günü Ayı Yılı). Kurum Adı, Öğretici Adı Soyadı."
+    }
+  },
+  {
+    "title": "36. Sanat Eseri ve Tarihî Eser",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/36-sanat-eseri-ve-tarihi-eser/",
+    "details": {
+      "Örnek": "<em>Ahşap 82 ve El Sanatları Fuarı&nbsp;15-27&nbsp;Temmuz</em>. Afiş, 1982. Ankara: Milli Kütüphane, No. 1982 AFİŞ 52.<p></p>\n<p>Direnoğlu, Şefik. <em>Alparslan Portresi</em>. Yağlı Boya, 2003. Ankara: Milli Kütüphane, No. 000511.</p>\n<p>Fréres, Abdullah. <em>Istanbul walls</em>. Fotoğraf, 1880-1893. Washington: Library of Congress, Abdul-Hamid II Collection, No. LOT 9528/12. <a href=\"https://lccn.loc.gov/2003663274\">https://lccn.loc.gov/2003663274</a></p>\n<p><em>Halı Seccade</em>. Halı, 17-18. yüzyıl. İstanbul: Türk ve İslâm Eserleri Müzesi, Halı Koleksiyonu, No. 420. http://www.tiem.gov.tr</p>\n<p>Hayali Küçük Ali. <em>Abdal</em>. Tasvir, 1957. Ankara: Milli Kütüphane, No. 000116. <a href=\"https://dijital-kutuphane.mkutup.gov.tr/tr/nonbookmaterials/catalog/details/78006\">https://dijital-kutuphane.mkutup.gov.tr/tr/ nonbookmaterials/catalog/details/78006</a></p>\n<p>Hoca Ali Rıza. <em>Bursa Çekirge’de Sultan Murat Hüdavendigâr Camii</em>. Karakalem, 1911. Ankara: Milli Kütüphane, No. 000311.</p>\n<p><em>Kapaklı Sahan</em>. Porselen, 19. yüzyıl. İstanbul: Vehbi Koç Vakfı Sadberk Hanım Müzesi, Türk-İslam Koleksiyonu, No. 120. <a href=\"http://www.sadberkhanimmuzesi.org.tr\">http://www.sadberkhanimmuzesi.org.tr</a></p>\n<p><em>Ud</em>. Ahşap, 20. yüzyıl. İstanbul: Vehbi Koç Vakfı Sadberk Hanım Müzesi, Türk-İslam Koleksiyonu, No. 18138. <a href=\"http://www.sadberkhanimmuzesi.org.tr\">http://www.sadberkhanimmuzesi.org.tr</a></p>",
+      "Kaynakçada": "Biliniyorsa Sanatkârın Soyadı, Adı.<em> Nesne Adı.</em> Nesnenin Cinsi, Nesnenin Dönemi. Müzenin/Kütüphanenin Bulunduğu Şehir: Müze/Kütüphane Adı, Koleksiyon Adı, No. Envanter Numarası. Erişim Adresi"
+    }
+  },
+  {
+    "title": "37. Fotoğraf-Dijital",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/37-fotograf-dijital/",
+    "details": {
+      "Örnek": "Pancar, Sezgin. <em>Mersin’deki Yumuktepe Höyüğü’nde Kazı Çalışmaları Sürüyor</em> (Fotoğraf, 2019). Anadolu Ajansı. Erişim 4 Nisan 2019. <a href=\"https://www.aa.com.tr/tr/pg/foto-galeri/mersindeki-yumuktepe-hoyugunde-kazi-calismalari-suruyor/13\">https://www.aa.com.tr/tr/pg/foto-galeri/mersindeki-yumuktepe-hoyugunde-kazi-calismalari-suruyor/13</a>",
+      "Kaynakçada": "Fotoğrafçının Soyadı, Adı. <em>Eser Adı</em> (Eser Türü, Yılı). Web Sitesi Adı. Erişim Gün Ay Yıl. Erişim Adresi"
+    }
+  },
+  {
+    "title": "38. Harita",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/38-harita/",
+    "children": [
+      {
+        "title": "38.1. Harita-Matbu",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/38-harita/38-1-harita-matbu/",
+        "details": {
+          "Örnek": "Çeçen, M. Kazım. <em>I. Bayezid Suyolu&nbsp;Haritaları</em>. &gt;İstanbul: İSKİ Yayınları, 1977.<p></p>\n<p>DN, Dahiliye Nezâreti. <em>Vilayet Yolları Haritasıdır</em>. İstanbul: Dahiliye Nezâreti Umur-i Mahalliye Vilayet Müdüriyeti, 1329/1913. İstanbul Büyükşehir Belediyesi Atatürk Kitaplığı, No. 23589. <a href=\"http://ataturkkitapligi.ibb.gov.tr\">http://ataturkkitapligi.ibb.gov.tr</a></p>\n<p>Pîrî Reis, Muhyiddin b. Hacı Mehmed. <em>Piri Reis&nbsp;Haritası</em>. &gt;İstanbul: Deniz Kuvvetleri Komutanlığı Hidrografi Neşriyatı, 1966. İstanbul Büyükşehir Belediyesi Atatürk Kitaplığı, No. Bel_Osm_B.00038. <a href=\"http://ataturkkitapligi.ibb.gov.tr\">http://ataturkkitapligi.ibb.gov.tr</a></p>",
+          "Kaynakçada": "Haritacı Soyadı, Adı. <em>Harita Adı</em>. Basım Yeri: Yayıncı, Basım Yılı. (varsa) Kütüphane Adı, Koleksiyon Adı, No. Demirbaş Numarası. Erişim Adresi"
+        }
+      },
+      {
+        "title": "38.2. Harita-Web",
+        "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/38-harita/38-2-harita-web/",
+        "details": {
+          "Örnek": "David Rumsey Map Collection. <em>Istanbul Vilayeti.</em> 19 Eylül 2019. <a href=\"https://www.davidrumsey.com\">https://www.davidrumsey.com</a><p></p>\n<p>Google. <em>Google Maps</em>. Erişim 12 Ocak 2019. <a href=\"https://www.google.com/maps\">https://www.google.com/maps</a></p>\n<p>Harita Genel Müdürlüğü. <em>Atlas</em>. Erişim 19 Eylül 2018. <a href=\"https://atlas.harita.gov.tr\">https://atlas.harita.gov.tr</a></p>",
+          "Kaynakçada": "Yayıncı Adı. <em>Harita Adı.</em> Erişim Gün Ay Yıl. Erişim Adresi"
+        }
+      }
+    ]
+  },
+  {
+    "title": "39. E-Posta",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/39-e-posta/",
+    "details": {
+      "Örnek": "Demir, Abdullah. <em>İSNAD Atıf Sistemi 2. Edisyon Taslağı hk</em>. E-Posta 2 Eylül 2019, Alıcı Emrah Kaya.",
+      "Kaynakçada": "Gönderici Soyadı, Adı. <em>Konu</em>. E-Posta Gün Ay Yıl, Alıcı Adı Soyadı."
+    }
+  },
+  {
+    "title": "40. Kısa Mesaj",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/40-kisa-mesaj/",
+    "details": {
+      "Örnek": "Doğan, Yusuf. <em>İlahiyat Atıf Dizini hk</em>. Kısa Mesaj 2 Eylül 2019, Alıcı Sami Şahin.",
+      "Kaynakçada": "Gönderen Soyadı, Adı. <em>Konu</em>. Kısa Mesaj Gün Ay Yıl, Alıcı Adı Soyadı."
+    }
+  },
+  {
+    "title": "41. Ambalaj",
+    "url": "https://www.isnadsistemi.org/guide/isnad2/isnad-dipnotlu/41-ambalaj/",
+    "details": {
+      "Örnek": "<em>Kırınkıl Çubuk Kraker 150 gr.</em> (Plastik Ambalaj, Ağustos 2019). İstanbul: BİM, Seri No. 291, Barkod No. 8695077001153.",
+      "Kaynakçada": "<em>Ürünün Adı</em> (Malzeme Adı, Üretim Tarihi). Üretim Yeri: Piyasaya Süren Firma Adı, Seri No: Seri Numarası, Barkod No. Barkod Numarası."
+    }
+  }
+];

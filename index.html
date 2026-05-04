@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İsnad Kaynakça Yönetim Sistemi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dinamik İsnad Kaynakça Oluşturucu</h1>
+        <p>Verileriniz tarayıcınızda güvenle saklanır.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="form-section">
+            <h2>Yeni Kayıt Ekle</h2>
+            
+            <div id="category-selectors">
+                <div class="input-group">
+                    <label for="main-category">Kategori Seçin</label>
+                    <select id="main-category">
+                        <option value="">-- Lütfen Seçin --</option>
+                    </select>
+                </div>
+            </div>
+
+            <form id="dynamic-form" class="hidden">
+                <div id="dynamic-inputs"></div>
+                <button type="submit" id="btn-submit" class="btn-primary">Kaynakçayı Oluştur</button>
+            </form>
+        </section>
+
+        <section class="list-section">
+            <div class="list-header">
+                <h2>Kaynakça Listem</h2>
+                <div class="action-buttons">
+                    <button id="btn-copy-all" class="btn-secondary" data-copy-tooltip="Word'e yapıştırmaya hazır">Tümünü Kopyala</button>
+                    <button id="btn-export" class="btn-secondary">JSON İndir</button>
+                    <label for="import-json" class="btn-secondary btn-label">JSON Yükle</label>
+                    <input type="file" id="import-json" accept=".json" class="hidden">
+
+                    <button id="btn-export-txt" class="btn-secondary">TXT İndir</button>
+                    <label for="import-txt" class="btn-secondary btn-label">TXT Yükle</label>
+                    <input type="file" id="import-txt" accept=".txt" class="hidden">
+                    
+                    <button id="btn-clear" class="btn-danger">Listeyi Temizle</button>
+                </div>
+            </div>
+            
+            <ul id="bibliography-list" class="isnad-output-list">
+            </ul>
+        </section>
+    </main>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
